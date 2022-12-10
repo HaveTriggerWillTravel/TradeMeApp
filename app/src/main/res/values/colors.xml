@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Brand Colours-->
+    <color name="tasman_500">#148FE2</color>
+    <color name="feijoa_500">#29A754</color>
+    <color name="bluff_oyster_800">#393531</color>
+    <color name="bluff_oyster_600">#85807B</color>
+
+    <!--Text colors-->
+    <color name="text_primary">@color/bluff_oyster_800</color>
+    <color name="text_secondary">@color/bluff_oyster_600</color>
+</resources>

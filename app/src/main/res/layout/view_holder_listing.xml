@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="@dimen/margin_smallest">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/listing_thumbnail_width"
+        android:layout_height="@dimen/listing_thumbnail_height"
+        android:layout_margin="@dimen/margin_smallest"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/location"
+        style="@style/TextInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_smallest"
+        app:layout_constraintLeft_toRightOf="@id/thumbnail"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Auckland" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_smallest"
+        app:layout_constraintLeft_toRightOf="@id/thumbnail"
+        app:layout_constraintTop_toBottomOf="@id/location"
+        tools:text="Lawnmower" />
+
+    <TextView
+        android:id="@+id/current_price"
+        style="@style/TextPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_smallest"
+        app:layout_constraintBottom_toTopOf="@+id/current_price_label"
+        app:layout_constraintLeft_toRightOf="@id/thumbnail"
+        tools:text="$300.00" />
+
+    <TextView
+        android:id="@+id/current_price_label"
+        style="@style/TextInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_smallest"
+        app:layout_constraintBottom_toBottomOf="@id/thumbnail"
+        app:layout_constraintLeft_toRightOf="@id/thumbnail"
+        tools:text="No reserve" />
+
+    <TextView
+        android:id="@+id/buy_now_price"
+        style="@style/TextPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_smallest"
+        app:layout_constraintBottom_toTopOf="@id/buy_now_price_label"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="$350.00" />
+
+    <TextView
+        android:id="@+id/buy_now_price_label"
+        style="@style/TextInfoImportant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/thumbnail"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="Buy Now" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

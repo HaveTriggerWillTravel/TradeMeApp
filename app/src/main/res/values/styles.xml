@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/navigation_bar_item_tint</item>
+        <item name="itemTextColor">@color/navigation_bar_item_tint</item>
+    </style>
+
+    <style name="TextInfo">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_info</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="TextPrice">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_price</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="TextInfoImportant" parent="TextInfo">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+</resources>

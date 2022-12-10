@@ -1,0 +1,13 @@
+<resources>
+
+    <dimen name="listing_thumbnail_width">120dp</dimen>
+    <dimen name="listing_thumbnail_height">130dp</dimen>
+
+    <!--Text sizes-->
+    <dimen name="text_info">12sp</dimen>
+    <dimen name="text_title">16sp</dimen>
+    <dimen name="text_price">16sp</dimen>
+
+    <!--Padding/margin sizes-->
+    <dimen name="margin_smallest">4dp</dimen>
+</resources>
